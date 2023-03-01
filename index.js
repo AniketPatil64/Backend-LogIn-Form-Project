@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded());
 app.use(cors())
-const url = "mongodb+srv://Admin:<password>@cluster0.zedayax.mongodb.net/form?retryWrites=true&w=majority";
+const url = "mongodb://localhost:27017/formdata";
 
 const UserSchema = new mongoose.Schema({
     name:String,
